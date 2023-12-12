@@ -15,7 +15,7 @@ body {
     grid-template-columns: 1fr 1fr;
     width: 80%;
     margin: 20vh auto;
-    gap: 1em;
+    gap: 2em;
     align-items: center;
 }
 
@@ -30,7 +30,6 @@ body {
 }
 
 .header-content p {
-    width: 85%;
     font-size: 0.9em;
     font-weight: 500;
 }
@@ -69,6 +68,7 @@ form input {
 }
 
 .submit-btn {
+    cursor: pointer;
     text-transform: uppercase;
     color: #FFF;
     font-weight: 600;
@@ -87,4 +87,42 @@ form p {
 form p span {
     font-weight: bold;
     color: hsl(0, 100%, 74%);
+}
+
+
+
+@media (max-width: 960px) {
+
+    body {
+        background-image: url(images/bg-intro-mobile.png);
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 85%;
+        margin-top: 10vh;
+        justify-content: center;
+        gap: 1em;
+        align-items: center;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .header-content h1 {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    .header-content p {
+        margin-bottom: 2em;
+    }
+
+
+    .try-btn {
+        padding: 2.2em 3em;
+    }
+
 }
