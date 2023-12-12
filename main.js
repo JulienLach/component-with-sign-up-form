@@ -9,10 +9,10 @@ document.getElementById('submit-btn').addEventListener('click', function (event)
     const lastNameError = document.querySelector('.last-name-error');
     const emailError = document.querySelector('.email-error');
     const passwordError = document.querySelector('.password-error');
-    const firstNameIconError = document.querySelector('.first-name-icon-error')
-    const lastNameIconError = document.querySelector('.last-name-icon-error')
-    const passwordIconError = document.querySelector('.password-icon-error')
-    const emailIconError = document.querySelector('.email-icon-error')
+    const firstNameIconError = document.querySelector('.first-name-icon-error');
+    const lastNameIconError = document.querySelector('.last-name-icon-error');
+    const passwordIconError = document.querySelector('.password-icon-error');
+    const emailIconError = document.querySelector('.email-icon-error');
 
 
     if (firstName === '') {
@@ -35,6 +35,7 @@ document.getElementById('submit-btn').addEventListener('click', function (event)
         document.querySelector('.email').style.border = '2px solid hwb(0 48% 0%)';
         document.querySelector('.email').classList.add('placeholder-error');
         emailIconError.classList.add('active')
+
     }
 
     if (password === '') {
