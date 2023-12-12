@@ -74,12 +74,17 @@ form input {
     font-weight: 600;
     background-color: hsl(154, 59%, 51%);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 7px 3px 0px, rgba(0, 0, 0, 0.2) 0px -4px 0px inset;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    transition: 0.3s;
+    background-color: hsl(154, 60%, 65%);
 }
 
 
-
 form p {
-    font-size: 0.7em;
+    font-size: 0.8em;
     color: hsl(246, 25%, 77%);
     text-align: center;
     margin-top: 1.3em;
@@ -93,17 +98,23 @@ form p span {
 
 /* FORM ERRORS */
 
-.icon-error {
+.first-name-icon-error,
+.last-name-icon-error,
+.email-icon-error,
+.password-icon-error {
     display: none;
     position: relative;
     margin-left: auto;
-    top: -2.6em;
-    margin-right: 1em;
+    top: -60px;
+    margin-right: 10px;
 }
 
-/* .icon-error.active {
+.first-name-icon-error.active,
+.last-name-icon-error.active,
+.email-icon-error.active,
+.password-icon-error.active {
     display: block;
-} */
+}
 
 .first-name-error,
 .last-name-error,
@@ -124,7 +135,7 @@ form p span {
 .email-error.active,
 .password-error.active {
     display: block;
-    margin-top: -1em;
+    margin-top: -4em;
 }
 
 .placeholder-error::placeholder {
