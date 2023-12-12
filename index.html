@@ -32,13 +32,28 @@
       <div>
         <button class="try-btn"><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
       </div>
-      <form action="">
-        <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Last Name">
-        <input type="email" placeholder="Email Address">
-        <input type="password" placeholder="Password">
-        <input type="button" class="submit-btn" value="Claim your free trial">
+      <form action="" method="">
+
+        <input type="text" class="first-name" placeholder="First Name">
+        <div class="icon-error"><img src="images/icon-error.svg" alt=""></div>
+        <div class="first-name-error">First name cannot be empty</div>
+
+        <input type="text" class="last-name" placeholder="Last Name">
+        <div class="icon-error"><img src="images/icon-error.svg" alt=""></div>
+        <div class="last-name-error">Last name cannot be empty</div>
+
+        <input type="email" class="email" placeholder="Email Address">
+        <div class="icon-error"><img src="images/icon-error.svg" alt=""></div>
+        <div class="email-error">Looks like this is not an email</div>
+
+        <input type="password" class="password" placeholder="Password">
+        <div class="icon-error"><img src="images/icon-error.svg" alt=""></div>
+        <div class="password-error">Password cannot be empty</div>
+
+        <input type="submit" id="submit-btn" class="submit-btn" value="Claim your free trial">
+
         <p> By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+
       </form>
     </div>
   </section>

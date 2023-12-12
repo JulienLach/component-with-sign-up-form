@@ -82,11 +82,53 @@ form p {
     font-size: 0.7em;
     color: hsl(246, 25%, 77%);
     text-align: center;
+    margin-top: 1.3em;
 }
 
 form p span {
     font-weight: bold;
     color: hsl(0, 100%, 74%);
+}
+
+
+/* FORM ERRORS */
+
+.icon-error {
+    display: none;
+    position: relative;
+    margin-left: auto;
+    top: -2.6em;
+    margin-right: 1em;
+}
+
+/* .icon-error.active {
+    display: block;
+} */
+
+.first-name-error,
+.last-name-error,
+.email-error,
+.password-error {
+    display: none;
+    font-size: 0.8em;
+    margin-left: auto;
+    color: hwb(0 48% 0%);
+    font-style: italic;
+    font-weight: 600;
+    position: relative;
+    height: 0.8em;
+}
+
+.first-name-error.active,
+.last-name-error.active,
+.email-error.active,
+.password-error.active {
+    display: block;
+    margin-top: -1em;
+}
+
+.placeholder-error::placeholder {
+    visibility: hidden;
 }
 
 
